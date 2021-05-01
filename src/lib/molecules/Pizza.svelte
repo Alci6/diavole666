@@ -1,6 +1,9 @@
 <script>
 	import Button from "./../atoms/Button.svelte";
+	
+	import ProductPizza from "./../organisms/ProductPizza.svelte";
 	export let pizza = {
+
 		img: "",
 		title: "",
 		price: 0,
@@ -9,7 +12,7 @@
 	export let i = 0;
 </script>
 
-<div class=" bg-white bg-opacity-75  shadow bg-clip-padding mt-2 text-center  p-8" style="backdrop-filter: blur(2px)" id="pizza-{i}">
+<div class="mx-7 bg-white bg-opacity-75  shadow bg-clip-padding mt-2 text-center  p-8" style="backdrop-filter: blur(2px)" id="pizza-{i}">
 	<div class="rounded-full">
 		<img   class="h-44 lg:h-50 xl:h-60" src="{pizza.img} " alt="pizza-{i}" />
 		
@@ -21,3 +24,5 @@
 
 	<Button>Pídeme!</Button>
 </div>
+
+<ProductPizza {pizza}  /> 

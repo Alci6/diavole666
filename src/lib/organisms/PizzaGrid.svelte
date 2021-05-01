@@ -10,7 +10,7 @@
 </script>
 
 <div class="mb-7 mt-8">
-	<div class=" gap-8 justify-center flex flex-wrap items-center">
+	<div class=" justify-center flex flex-wrap items-center">
 		{#each pizzas as pizza, i}
 			<Pizza {pizza} {i} />
 		{/each}
