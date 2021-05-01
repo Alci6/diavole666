@@ -1,6 +1,10 @@
 <script>
-	import TitularSection from "./../molecules/TitularSection.svelte"
-	export let titular = {}; 
+	import TitularSection from "./../molecules/TitularSection.svelte";
+	export let titular = {};
 </script>
-<TitularSection {titular}/>
- 
+
+<header class="shadow-xl">
+	<TitularSection {titular}>
+		<slot />
+	</TitularSection>
+</header>

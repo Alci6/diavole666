@@ -2,18 +2,16 @@
 	export let titular = {
 		headline: "Transactions",
 		title: "A better way to send money",
-		content:
-			"Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.ent",
 		img: "/static/diablo.png", 
 	};
 
 </script>
 
-<div class="py-12 bg-white">
+<div class="py-12 bg-white ">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="lg:text-center">
+		<div class="lg:text-center md:text-center">
 			<h2
-				class="text-base text-red-600 font-serif tracking-wide uppercase"
+				class="text-center text-base text-red-600 font-serif tracking-wide uppercase"
 			>
 				<img class="w-8 inline" src="{titular.img}" alt="">
 
@@ -26,8 +24,8 @@
 			>
 				{titular.title}
 			</p>
-			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-				{titular.content}
+			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto md:mx-auto">
+				<slot/>
 			</p>
 		</div>
 	</div>

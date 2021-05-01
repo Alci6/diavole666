@@ -2,7 +2,8 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "ts-check": "svelte-check"
+    "ts-check": "svelte-check",
+    "prod": "npm run build && vercel --prod"
   },
   "dependencies": {
     "svelte": "^3.32.1"
