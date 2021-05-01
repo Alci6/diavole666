@@ -23,12 +23,10 @@
 </main>
 
 <style>
-
-main {
-	background: url(/static/foodpatterns.svg);
-	background-repeat: repeat;
-	background-size: 12rem;
-	height: 100%;
+	main {
+		background: url(/static/foodpatterns.svg);
+		background-repeat: repeat;
+		background-size: 12rem;
+		height: 100%;
 	}
-
 </style>

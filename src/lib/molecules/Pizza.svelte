@@ -10,6 +10,9 @@
 	};
 
 	export let i = 0;
+
+	let popUp = false; 
+	let popUpToogle = () => { popUp = !popUp; console.log("popUp clicked")} ; 
 </script>
 
 <div class="mx-7 bg-white bg-opacity-75  shadow bg-clip-padding mt-2 text-center  p-8" style="backdrop-filter: blur(2px)" id="pizza-{i}">
@@ -22,7 +25,7 @@
 		<h3 class=" text-red-500 text-1xl">{Intl.NumberFormat('de-DE').format(pizza.price)}€</h3>
 	</div>
 
-	<Button>Pídeme!</Button>
+	<Button onClick={popUpToogle} >Pídeme!</Button>
 </div>
 
-<ProductPizza {pizza}  /> 
+<ProductPizza {pizza} {popUp} onClick={popUpToogle} /> 
