@@ -1,12 +1,14 @@
 <script>
 	import Button from "./../atoms/Button.svelte";
 	
-	import ProductPizza from "./../organisms/ProductPizza.svelte";
+	import ProductPizza from "./ProductPizza.svelte";
+	import {europeNumbers} from "./../../scripts.js"; 
 	export let pizza = {
 
 		img: "",
 		title: "",
 		price: 0,
+		description: "",
 	};
 
 	export let i = 0;
@@ -22,10 +24,10 @@
 	</div>
 	<div class="mb-3">
 		<h3 class="font-serif text-3xl ">{pizza.title}</h3>
-		<h3 class=" text-red-500 text-1xl">{Intl.NumberFormat('de-DE').format(pizza.price)}€</h3>
+		<h3 class=" text-red-500 text-1xl">{europeNumbers(pizza.price)}€</h3>
 	</div>
 
-	<Button onClick={popUpToogle} >Pídeme!</Button>
+	<Button onClick={popUpToogle} >¡Pídeme!</Button>
 </div>
 
 <ProductPizza {pizza} {popUp} onClick={popUpToogle} /> 

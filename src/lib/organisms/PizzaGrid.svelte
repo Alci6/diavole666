@@ -1,12 +1,6 @@
 <script lang="typescript">
 	import Pizza from "../molecules/Pizza.svelte";
-
-	const pizzas = [
-		{ img: "/static/pizza-peperonni.png", title: "Peperonni", price: 12.95 },
-
-		{ img: "/static/pizza-diavola.png", title: "Diavola", price: 13.69 },
-		{ img: "/static/pizza-carbonara.png", title: "Carbonara", price: 12.95 },
-	];
+	import { pizzas } from "./../../stores/pizzaStore";
 </script>
 
 <div class="mb-7 mt-8">

@@ -1,9 +1,13 @@
 <script>
 	import Button from "./../atoms/Button.svelte";
+	import Selector from "./../atoms/Selector.svelte";
+	import { europeNumbers } from "./../../scripts.js";
+	import DescriptionText from "./../atoms/DescriptionText.svelte";
 	export let pizza = {
 		img: "",
 		title: "",
 		price: 0,
+		description: "",
 	};
 	export let i = 0;
 	export let popUp = false;
@@ -19,20 +23,37 @@
 				alt=""
 			/>
 		</div>
-		<div class="h-full bg-gradient-to-r from-gray-100  via-white rounded-r-2xl">
+		<div class="h-full bg-gradient-to-r from-gray-200  via-white rounded-r-2xl">
 			<button on:click={onClick} class="float-right m-4 ">X</button>
 			<div class="mt-10 ml-10">
-				<h1 class="mb-5 font-serif text-4xl">
+				<h1 class=" font-serif text-4xl">
 					{pizza.title}
 				</h1>
-				<h2>Precio de venta {pizza.price}</h2>
+				<h2 class="text-red-600 text-2xl font-mono">
+					{europeNumbers(pizza.price)}€
+				</h2>
 			</div>
-			<div class="m-10">
-				<Button>¡Empezar a hornear!</Button>
+
+			<div class=" m-10">
+				<div class="inline-block mr-4">
+					<Selector />
+				</div>
+				<div class="inline-block">
+					<Button>¡Hornear!</Button>
+				</div>
+
+				<div class="mt-5">
+					<DescriptionText>{pizza.description}</DescriptionText>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
+
 
 <style>
 	.hide {
@@ -50,6 +71,7 @@
 		height: 100%;
 	}
 	.modal {
+		transition: opacity 0.25s ease;
 		background: #fefefe;
 		position: absolute;
 		left: 15%;
