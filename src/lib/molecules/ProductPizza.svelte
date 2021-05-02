@@ -74,8 +74,10 @@
 		transition: opacity 0.25s ease;
 		background: #fefefe;
 		position: absolute;
-		left: 15%;
+		left: 0%;
+		right: 0;
 		top: 15%;
+		margin: auto;
 		width: 56em;
 	}
 </style>
