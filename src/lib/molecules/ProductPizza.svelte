@@ -16,15 +16,15 @@
 </script>
 
 <div class={popUp ? "show" : "hide"} id="pizza-info-{i}">
-	<div class="modal rounded-2xl h-96 grid grid-cols-2 ">
-		<div class="h-full   grid justify-items-center ">
+	<div class="modal max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden max-w-full">
+		<div class="h-full grid justify-items-center md:flex ">
 			<img
 				class=" m-auto align-baseline inline-block h-80 rounded-full"
 				src={pizza.img}
 				alt=""
 			/>
 		</div>
-		<div class="h-full bg-gradient-to-r from-gray-200  via-white rounded-r-2xl">
+		<div class="p-2 bg-gradient-to-r from-gray-200  via-white rounded-r-2xl">
 			<button on:click={onClick} class="float-right m-4 ">X</button>
 			<div class="mt-10 ml-10">
 				<h1 class=" font-serif text-4xl">
@@ -77,7 +77,7 @@
 		position: absolute;
 		left: 0%;
 		right: 0;
-		top: 15%;
+		top: 5%;
 		margin: auto;
 		width: 56em;
 	}
