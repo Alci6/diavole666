@@ -3,7 +3,7 @@
 </script>
 
 
-<img class="v-mid" src="{img}" alt="imagen">
+<img  src="{img}" alt="imagen">
 
 
 <style>

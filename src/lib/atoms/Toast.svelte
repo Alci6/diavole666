@@ -149,7 +149,7 @@
 	}
 </style>
 
-<div id="toast" class="hide noselect" class:show={showToast}>
+<div id="toast" class="hide selectDisable" class:show={showToast}>
 	<div id="img">
 		<img src="img/save.svg" alt="send">
 	</div>

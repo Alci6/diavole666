@@ -12,7 +12,7 @@
 			¿En que consiste?
 		</a>
 			<a class="ma0 pa0 link white" href="#formulario"> 
-		<Button href="#formulario" type={'white-btn'} > 			
+		<Button href="#formulario" type={'nav-btn'} > 			
  ¡Apúntate! 
 		</Button>
 	</a>

@@ -51,8 +51,8 @@ let showToast = false;
 	}
 </style>
 <section>
-		<div class="bg-white ma3 pa4 maxwd center ml5-l br3 shadow-4 noselect">
-			<h1 class="roboto-bold noselect f3  b lh-title mt0 mb1 mb2-ns measure word-wrap dark-gray">
+		<div class="bg-white md:m-10 m-1 p-9 max-w-md rounded-2xl shadow selectDisable">
+			<h1 class="roboto-bold selectDisable text-2xl    measure word-wrap dark-gray">
 				{title}
 			</h1>
 

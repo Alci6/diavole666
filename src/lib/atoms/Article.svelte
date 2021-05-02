@@ -7,11 +7,11 @@
 let {highlight, title, content} = copyText;  
 
 </script>
-<div>
+<div class="p-2">
 
-	<h3 class=" mw6 f5 nunito light-red  ttu ">{highlight} </h3>
-	<h1 class="mw6 mt1 nunito-bold dark-gray">{title} </h1>
-	<p class="mw6 system-sans-serif lh-copy f4 fw1 tl pr4">{content} </p>
+	<h3 class="  nunito light-red  uppercase ">{highlight} </h3>
+	<h1 class=" my-1 nunito-bold text-gray-800">{title} </h1>
+	<p class=" text-xl  font-light">{content} </p>
 
 
 </div>

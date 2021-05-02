@@ -19,7 +19,7 @@
 
 <div class={popUp ? "show" : "hide"} id="pizza-info-{i}">
 	<div
-		class="modal max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+		class="modal m-1/2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
 	>
 		<div class="md:flex">
 			<div class="md:flex-shrink-0 flex">
@@ -79,6 +79,5 @@
 		right: 0;
 		top: 15%;
 		margin: auto;
-		width: 40em;
 	}
 </style>
