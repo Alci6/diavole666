@@ -3,7 +3,7 @@
 	import Selector from "./../atoms/Selector.svelte";
 	import { europeNumbers } from "./../../scripts.js";
 	import DescriptionText from "./../atoms/DescriptionText.svelte";
-	import {dungeonAccess} from "./../../stores/enterDungeon.js"; 
+	import { dungeonAccess } from "./../../stores/enterDungeon.js";
 	export let pizza = {
 		img: "",
 		title: "",
@@ -13,48 +13,48 @@
 	export let i = 0;
 	export let popUp = false;
 	export let onClick = () => console.log("click");
+	export const dungeonOpen = () =>
+		pizza.title == "Diavole" ? ($dungeonAccess = true) : "";
 </script>
 
 <div class={popUp ? "show" : "hide"} id="pizza-info-{i}">
-	<div class="modal max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden max-w-full">
-		<div class="h-full grid justify-items-center md:flex ">
-			<img
-				class=" m-auto align-baseline inline-block h-80 rounded-full"
-				src={pizza.img}
-				alt=""
-			/>
-		</div>
-		<div class="p-2 bg-gradient-to-r from-gray-200  via-white rounded-r-2xl">
-			<button on:click={onClick} class="float-right m-4 ">X</button>
-			<div class="mt-10 ml-10">
-				<h1 class=" font-serif text-4xl">
-					{pizza.title}
-				</h1>
-				<h2 class="text-red-600 text-2xl font-mono">
-					{europeNumbers(pizza.price)}€
-				</h2>
+	<div
+		class="modal max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+	>
+		<div class="md:flex">
+			<div class="md:flex-shrink-0 flex">
+				<img
+					class="h-48 w-full self-center object-cover md:w-48 "
+					src={pizza.img}
+					alt="pizza-{i}"
+				/>
 			</div>
-
-			<div class=" m-10">
-				<div class="inline-block mr-4">
-					<Selector />
+			<div class="p-8 bg-gradient-to-r from-gray-200">
+				<button on:click={onClick} class="float-right ">X</button>
+				<div class=" tracking-wide text-sm text-red-500 font-semibold">
+					{europeNumbers(pizza.price)} €
 				</div>
-				<div class="inline-block">
-					<Button onClick={() => pizza.title == "Diavole" ? $dungeonAccess= true : ""}>¡Hornear!</Button>
-				</div>
+				<p
+					class="block mt-1 text-2xl leading-tight font-medium text-black font-serif"
+				>
+					{pizza.title}
+				</p>
 
-				<div class="mt-5">
+				<div class="my-3">
+					<div class="inline-block mr-4">
+						<Selector />
+					</div>
+					<div class="inline-block">
+						<Button onClick={dungeonOpen}>¡Hornear!</Button>
+					</div>
+				</div>
+				<p class="mt-2 text-gray-500">
 					<DescriptionText>{pizza.description}</DescriptionText>
-				</div>
+				</p>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-
-
-
 
 <style>
 	.hide {
@@ -75,10 +75,10 @@
 		transition: opacity 0.25s ease;
 		background: #fefefe;
 		position: absolute;
-		left: 0%;
+		left: 0;
 		right: 0;
-		top: 5%;
+		top: 15%;
 		margin: auto;
-		width: 56em;
+		width: 40em;
 	}
 </style>
