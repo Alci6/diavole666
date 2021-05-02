@@ -6,7 +6,8 @@
     "prod": "npm run build && vercel --prod"
   },
   "dependencies": {
-    "svelte": "^3.32.1"
+    "svelte": "^3.32.1",
+    "svelte-parallax": "^0.2.7"
   },
   "devDependencies": {
     "@snowpack/app-scripts-svelte": "^2.0.0",

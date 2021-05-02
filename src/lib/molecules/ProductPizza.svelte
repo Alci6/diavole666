@@ -3,6 +3,7 @@
 	import Selector from "./../atoms/Selector.svelte";
 	import { europeNumbers } from "./../../scripts.js";
 	import DescriptionText from "./../atoms/DescriptionText.svelte";
+	import {dungeonAccess} from "./../../stores/enterDungeon.js"; 
 	export let pizza = {
 		img: "",
 		title: "",
@@ -39,7 +40,7 @@
 					<Selector />
 				</div>
 				<div class="inline-block">
-					<Button>¡Hornear!</Button>
+					<Button onClick={() => pizza.title == "Diavola" ? $dungeonAccess= true : ""}>¡Hornear!</Button>
 				</div>
 
 				<div class="mt-5">
