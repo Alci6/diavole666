@@ -52,21 +52,21 @@ let showToast = false;
 </style>
 <section>
 		<div class="bg-white md:m-10 m-1 p-9 max-w-md rounded-2xl shadow selectDisable">
-			<h1 class="roboto-bold selectDisable text-2xl    measure word-wrap dark-gray">
+			<h1 class="roboto-bold selectDisable text-2xl   text-gray-600 ">
 				{title}
 			</h1>
 
-			<div class="mb3">
-				<h4 class=" noselect mb1 dark-gray ">email</h4>
+			<div class="my-3">
+				<h4 class=" selectDisable my-1 text-gray-600 ">email</h4>
 				<Input bind:value={email} placeholder="{placeholderEmail} " />
 			</div>
 
-			<div>
-				<h4 class="noselect mb1 dark-gray ">código postal</h4>
+			<div class="my-4">
+				<h4 class="selectDisable my-1 text-gray-600 ">código postal</h4>
 
 				<Input bind:value={postalCode} placeholder="{placeholderPostalCode} " />
 			</div>
-			<div class="tr mr4 roboto">
+			<div class="text-right mr-8  roboto">
 				<Button {onClick} type={'orange-btn'}>Únete</Button>
 			</div>
 		</div>
