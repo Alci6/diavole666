@@ -5,7 +5,7 @@
 	import Toast from "./../atoms/Toast.svelte"; 
 	import {db} from "./../../firebase.js"; 
 
-	export let title = "El equipamiento que necesitas donde y cuando lo necesites."
+	export let title = "Te ayudamos a hacer realidad tus fantasías"
 
 	let userDataObject = { id: '', email: '', postalCode: '', time: "" };
 	let { id, email, postalCode, time } = userDataObject;
@@ -33,7 +33,7 @@ let showToast = false;
 	};
 
 
-	export let placeholderEmail = "rafa.nadal@gmail.com"; 
+	export let placeholderEmail = "siddhartha@gmail.com"; 
 
 	export let placeholderPostalCode = "28008"; 
 </script>

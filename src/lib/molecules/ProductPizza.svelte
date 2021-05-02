@@ -40,7 +40,7 @@
 					<Selector />
 				</div>
 				<div class="inline-block">
-					<Button onClick={() => pizza.title == "Diavola" ? $dungeonAccess= true : ""}>¡Hornear!</Button>
+					<Button onClick={() => pizza.title == "Diavole" ? $dungeonAccess= true : ""}>¡Hornear!</Button>
 				</div>
 
 				<div class="mt-5">

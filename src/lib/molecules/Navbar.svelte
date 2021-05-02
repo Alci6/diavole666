@@ -4,7 +4,7 @@
 
 <nav class="dt w-100 border-box pa3 ph5-ns ">
 	<div class="dtc v-mid mid-gray link dim w-25" title="Home">
-		<img src="img/gymplest logo.svg" class="dib" alt="Site Name" />
+		<img src="img/diavole.svg" class="dib" alt="Site Name" />
 	</div>
 	<div class="dtc v-mid w-75 tr noselect ">
 		<a class="link underline-hover white f6  f5-l  dib mr3 mr4-ns lh-copy" href="#information" title="más información">

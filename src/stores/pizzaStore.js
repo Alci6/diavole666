@@ -8,7 +8,7 @@ export const pizzas = [
 	},
 	{
 		img: "/static/pizza-diavola.png",
-		title: "Diavola",
+		title: "Diavole",
 		price: 21.69,
 		description:
 			"Suculenta pizza diavola con cremoso queso chorreante fundido, además, incluye ese puntito picante no apto para todos los públicos que te hará repetir una y otra vez. Esperamos que no esté demasiado caliente para tu lengua. ",

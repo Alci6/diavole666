@@ -1,20 +1,22 @@
 export const copyweb = [
 	{
-		highlight: "Para deportistas",
-		title: "¿Quieres practicar deporte con el mejor equipamiento?",
-		content: `"Esta semana quiero probar la elíptica, la próxima semana el remo, y la siguiente voy a necesitar una bola de yoga enorme..." Pide, practica y si te gusta lo mantienes. Tan sencillo como pedir comida por Glovo o ver una serie en Netflix.`,
-		img: "/img/ilustration/volleyball.svg",
+		highlight: "Discreción",
+		title: "Protegemos tu información de ojos indiscretos ",
+		content: `La clave de nuestro servicio es tu seguridad y tranquilidad mientras estás disfrutando del placer sin límites, por ello, nuestra web esta diseñada para no dejar huella.`,
+		img: "/img/ilustration/sofa.svg",
 	},
 	{
-		highlight: "Para ahorradores",
-		title: "¿Te gustaría pagar menos que la cuota del gimnasio?",
-		content: "Oye, hablando claro, no te gastes miles de euros cuando puedes tener una subscripción mensual que te permite montarte tu propio gimnasio en casa. Nos adaptamos a tus necesidades, si estas cambian tu equipo también cambia, más sencillo que alquilar un coche.",
-		img: "/img/ilustration/golf.svg",
+		highlight: "Libertad",
+		title: "¿Te gustaría compartir tu fantasía?",
+		content: "Oye, hablando claro, no vas encontrar un equipo más experimentado que nosotros. Cuéntanos que estás buscando y trataremos de encontrar a la persona o personas que puedan satisfacerte",
+
+		img: "/img/ilustration/selfie.svg",
 	},
 	{
-		highlight: "Para ti y tu familia",
-		title: "¿Quieres hacer deporte con los tuyos?",
-		content: "No limitamos quien puede usar nuestro equipamiento. Si tu suegro te reta a levantar hierro en press de banca, nosotros ponemos la máquina a ti te toca poner el músculo. ",
-		img: "/img/ilustration/tennis.svg",
+		highlight: "Seguridad",
+		title: "Garantizamos que tu cuerpo va a estar en buenas manos",
+		content: "Parte de la magia es asegurarnos que vuelvas a repetir y que quieran volver a repetir contigo. Por ello, nos aseguramos del antes y del después (del durante os encargais vosotros).",
+		img: "/img/ilustration/dog.svg",
 	},
+
 ];
