@@ -1,7 +1,7 @@
 <script lang="typescript">
 	import Bar from "./../atoms/Bar.svelte";
-	import Header from "./../organisms/Header.svelte";
-	import PizzaGrid from "./../organisms/PizzaGrid.svelte";
+	import Header from "./../organisms/PZ_Header.svelte";
+	import PizzaGrid from "./../organisms/PZ_Grid.svelte";
 	const titular = {
 		headline: "Pizzería Diavole",
 		title: "El hogar de la pizza más cremosa y picante",

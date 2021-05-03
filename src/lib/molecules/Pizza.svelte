@@ -1,8 +1,7 @@
 <script>
 	import Button from "./../atoms/Button.svelte";
-	
-	import ProductPizza from "./ProductPizza.svelte";
-	import {europeNumbers} from "./../../scripts.js"; 
+	import Modal from "./Modal.svelte";
+	import {europeNumbers} from "./../../scripts.ts"; 
 	export let pizza = {
 
 		img: "",
@@ -30,4 +29,4 @@
 	<Button onClick={popUpToogle} >¡Pídeme!</Button>
 </div>
 
-<ProductPizza {pizza} {popUp} onClick={popUpToogle} /> 
+<Modal data={pizza} {popUp} onClick={popUpToogle} /> 

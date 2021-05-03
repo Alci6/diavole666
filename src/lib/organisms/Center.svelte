@@ -1,6 +1,6 @@
 <script>
 import InfoImg from "./../molecules/InfoImg.svelte";
-	import {copyweb} from "./../../copyweb.js";  
+	import {copyweb} from "./../../stores/copyweb.ts";  
 console.log(copyweb)
 </script>
 

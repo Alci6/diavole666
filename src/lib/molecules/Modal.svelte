@@ -1,20 +1,22 @@
 <script>
 	import Button from "./../atoms/Button.svelte";
 	import Selector from "./../atoms/Selector.svelte";
-	import { europeNumbers } from "./../../scripts.js";
+	import { europeNumbers } from "./../../scripts.ts";
 	import DescriptionText from "./../atoms/DescriptionText.svelte";
-	import { dungeonAccess } from "./../../stores/enterDungeon.js";
-	export let pizza = {
+	import { dungeonAccess } from "./../../stores/enterDungeon.ts";
+	export let data = {
 		img: "",
 		title: "",
 		price: 0,
 		description: "",
 	};
-	export let i = 0;
+
+	let {img, title, price, description} = data; 
+export let i = 0;
 	export let popUp = false;
 	export let onClick = () => console.log("click");
 	export const dungeonOpen = () =>
-		pizza.title == "Diavole" ? ($dungeonAccess = true) : "";
+		title == "Diavole" ? ($dungeonAccess = true) : "";
 </script>
 
 <div class={popUp ? "show" : "hide"} id="pizza-info-{i}">
@@ -25,19 +27,19 @@
 			<div class="md:flex-shrink-0 flex">
 				<img
 					class="h-48 w-full self-center object-cover md:w-48 "
-					src={pizza.img}
-					alt="pizza-{i}"
+					src={img}
+					alt="imagen-{i}"
 				/>
 			</div>
 			<div class="p-8 bg-gradient-to-r from-gray-200">
 				<button on:click={onClick} class="float-right ">X</button>
 				<div class=" tracking-wide text-sm text-red-500 font-semibold">
-					{europeNumbers(pizza.price)} €
+					{europeNumbers(price)} €
 				</div>
 				<p
 					class="block mt-1 text-2xl leading-tight font-medium text-black font-serif"
 				>
-					{pizza.title}
+					{title}
 				</p>
 
 				<div class="my-3">
@@ -49,7 +51,7 @@
 					</div>
 				</div>
 				<p class="mt-2 text-gray-500">
-					<DescriptionText>{pizza.description}</DescriptionText>
+					<DescriptionText>{description}</DescriptionText>
 				</p>
 			</div>
 		</div>

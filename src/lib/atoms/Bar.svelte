@@ -3,4 +3,4 @@
 	export let position = "top"
 </script>
 
-<div class="z-40 w-full h-3 bg-{color}-500 fixed {position}-0" />
+<div class="z-10 w-full h-3 bg-{color}-500 fixed {position}-0" />

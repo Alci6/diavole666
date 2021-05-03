@@ -1,8 +1,13 @@
 <script>
 	export let showToast = false;
-
-
 </script>
+
+<div id="toast" class="hide selectDisable" class:show={showToast}>
+	<div id="img">
+		<img src="img/save.svg" alt="send" />
+	</div>
+	<div id="desc" class="pre">Información Recibida</div>
+</div>
 
 <style>
 	.hide {
@@ -148,10 +153,3 @@
 		}
 	}
 </style>
-
-<div id="toast" class="hide selectDisable" class:show={showToast}>
-	<div id="img">
-		<img src="img/save.svg" alt="send">
-	</div>
-	<div id="desc" class="pre">Información Recibida </div>
-</div>
