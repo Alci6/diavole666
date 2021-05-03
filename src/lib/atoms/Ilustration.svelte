@@ -3,7 +3,7 @@
 </script>
 
 
-<img  src="{img}" alt="imagen">
+<img  src="{img}" alt="imagen" class="mx-auto">
 
 
 <style>
