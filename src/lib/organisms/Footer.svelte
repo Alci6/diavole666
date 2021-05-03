@@ -13,8 +13,8 @@
 		
 </style>
 
-<div class=" pa3 pattern" id="formulario">
-	<div class=" center mw6 ">
+<div class="p-2  pattern" id="formulario">
+	<div class=" mx-auto max-w-max ">
 			<Form placeholderEmail="grey@gmail.com" placeholderPostalCode="28050" title={"¡Apúntate ya a la beta privada!"} />
 	</div>		
 </div>
